@@ -1,0 +1,82 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+/* slick carousel */
+.slick-slider:before {
+	content: "";
+	background-color: rgba(255,255,255,0.8);
+	width: 100%;
+	padding-bottom: 33.333%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translateX(-100%);
+	z-index: 10;
+}
+
+.slick-slider:after {
+	content: "";
+	background-color: rgba(255,255,255,0.8);
+	width: 100%;
+	padding-bottom: 33.333%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateX(100%);
+	z-index: 10;
+}
+
+.slick-list {
+	overflow: visible;
+	padding: 0 !important;
+}
+
+.slick-arrow {
+	text-indent: -9999px;
+	background-color: #fff;
+	width: 48px;
+	height: 48px;
+	margin-top: 40px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 20;
+}
+
+.slick-arrow:focus {
+	border: none;
+	outline: none;
+}
+
+.slick-arrow.slick-prev {
+	margin-left: -24px;
+	left: 0;
+}
+
+.slick-arrow.slick-next {
+	margin-right: -24px;
+	right: 0;
+}
+
+
+/* Google Map */
+#gmap {
+	width: 100%;
+	height: 0;
+	padding-bottom: 50%;
+}
+
+
+/* Make it a tree change */
+.make-it-a-tree-change {
+	background-image: url(../img/image-make-it-a-tree-change.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+}

@@ -1,0 +1,103 @@
+@mixin font_family($families) {
+	@each $name, $family in $families {
+  		.font-#{$name} {
+    		    font-family: $family;
+  		}
+	}
+}
+
+@mixin font_size($sizes) {
+	@each $name, $size in $sizes {
+  		.font-size-#{$name} {
+    		    font-size: $size;
+  		}
+	}
+}
+
+
+@mixin text_color($colors) {
+	@each $name, $color in $colors {
+  		.text-color-#{$name} {
+    		    color: $color;
+  		}
+	}
+}
+
+@mixin text_transform($transforms) {
+     @each $name, $transform in $transforms {
+          .text-transform-#{$name} {
+               text-transform: $transform;
+          }
+     }
+}
+
+
+@mixin overflow($name, $position) {
+	.overflow-#{$name} {
+    	     overflow: $position;
+  	}
+}
+
+@mixin background_color($colors) {
+	@each $name, $color in $colors {
+  		.background-color-#{$name} {
+    		    background-color: $color;
+  		}
+	}
+}
+
+@mixin horizontal_spacing($spacings) {
+	@each $name, $spacing in $spacings {
+		.ml-#{$name} {
+    		    margin-left: $spacing;
+  		}
+
+  		.mr-#{$name} {
+    		    margin-right: $spacing;
+  		}
+
+  		.pl-#{$name} {
+    		    padding-left: $spacing;
+  		}
+
+  		.pr-#{$name} {
+    		    padding-right: $spacing;
+  		}
+	}
+}
+
+@mixin vertical_spacing($spacings) {
+	@each $name, $spacing in $spacings {
+		.mt-#{$name} {
+    		    margin-top: $spacing;
+  		}
+
+  		.mb-#{$name} {
+    		    margin-bottom: $spacing;
+  		}
+
+  		.pt-#{$name} {
+    		    padding-top: $spacing;
+  		}
+
+  		.pb-#{$name} {
+    		    padding-bottom: $spacing;
+  		}
+	}
+}
+
+@mixin position($positions) {
+	@each $name, $position in $positions {
+  		.position-#{$name} {
+    		    position: $position;
+  		}
+	}
+}
+
+@mixin zindex($depths) {
+	@each $depth in $depths {
+  		.zindex-#{$depth} {
+    		    z-index: $depth;
+  		}
+	}
+}
